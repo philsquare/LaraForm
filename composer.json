@@ -1,0 +1,13 @@
+{
+    "name": "philsquare/laraform",
+    "description": "Form helper for Laravel applications using UIKit (getuikit.com)",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Philsquare LLC",
+            "email": "hello@philsquare.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {}
+}
