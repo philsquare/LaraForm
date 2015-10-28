@@ -1,0 +1,21 @@
+{
+    "name": "philsquare/laraform",
+    "description": "Form helper for Laravel applications using UIKit (getuikit.com)",
+    "keywords": ["laravel","form"],
+    "homepage": "https://github.com/philsquare/LaraForm",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Philsquare LLC",
+            "email": "hello@philsquare.com",
+            "homepage": "http://philsquare.com"
+        }
+    ],
+    "autoload": {
+      "psr-4": {
+        "Philsquare\\LaraForm\\": "src/"
+      }
+    },
+    "minimum-stability": "stable",
+    "require": {}
+}
