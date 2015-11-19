@@ -1,1 +1,0 @@
-<input type="submit" value="{{ $value or 'Save' }}" name="submit" class="uk-width-1-1 uk-button">
