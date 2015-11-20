@@ -2,8 +2,8 @@
 
 @section('field')
 
-    <input name="{{ $name }}" type="checkbox" value="{{ $value or '1' }}"
-           class="{{ $errors->has($name) ? 'uk-form-danger' : '' }}"
-            {{ (old($name) OR $checked) ? 'checked="checked"' : '' }}>
+    <input name="{{ $field['name'] }}" type="checkbox" value="{{ $field['value'] or '1' }}"
+           class="{{ $errors->has($field['name']) ? 'uk-form-danger' : '' }}"
+            {{ (old($field['name']) OR $field['checked']) ? 'checked="checked"' : '' }}>
 
 @overwrite

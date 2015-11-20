@@ -2,11 +2,11 @@
 
 @section('field')
 
-    <input name="{{ $name }}"
+    <input name="{{ $field['name'] }}"
            type="text"
-           value="{{ old($name) ?: (isset($value) ? $value : '') }}"
-           class="{{ $class or 'uk-width-1-1' }} {{ $errors->has($name) ? 'uk-form-danger' : '' }}"
-           id="{{ $id or '' }}"
-           placeholder="{{ $placeholder or '' }}">
+           value="{{ old($field['name']) ?: (isset($field['value']) ? $field['value'] : '') }}"
+           class="{{ $field['class'] or 'uk-width-1-1' }} {{ $errors->has($field['name']) ? 'uk-form-danger' : '' }}"
+           id="{{ $field['id'] or '' }}"
+           placeholder="{{ $field['placeholder'] or '' }}">
 
 @overwrite

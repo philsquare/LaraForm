@@ -1,7 +1,13 @@
-@if(isset($url))
-    <div class="image">
-        <img src="{{ $url }}">
-    </div>
-@endif
+@extends('laraform::wrappers.form')
 
-<input type="file" name="{{ $name }}">
+@section('field')
+
+    @if(isset($field['url']))
+        <div class="image">
+            <img src="{{ $field['url'] }}">
+        </div>
+    @endif
+
+    <input type="file" name="{{ $field['name'] }}">
+
+@overwrite
