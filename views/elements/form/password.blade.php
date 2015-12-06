@@ -2,10 +2,10 @@
 
 @section('field')
 
-    <input name="{{ $name }}"
+    <input name="{{ $field['name'] }}"
            type="password"
-           class="{{ $class or 'uk-width-1-1' }} {{ $errors->has($name) ? 'uk-form-danger' : '' }}"
-           id="{{ $id or '' }}"
-           placeholder="{{ $placeholder or '' }}">
+           class="{{ $field['class'] or 'uk-width-1-1' }} {{ $errors->has($field['name']) ? 'uk-form-danger' : '' }}"
+           id="{{ $field['id'] or '' }}"
+           placeholder="{{ $field['placeholder'] or '' }}">
 
 @overwrite

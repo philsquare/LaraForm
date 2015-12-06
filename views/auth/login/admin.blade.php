@@ -4,9 +4,9 @@
         <form class="uk-form uk-form-stacked" method="POST" action="{{ $action }}">
             <input type="hidden" name="_token" value="{{ csrf_token() }}">
 
-            @include('laraform::elements.form.email', ['name' => 'email'])
-            @include('laraform::elements.form.password', ['name' => 'password'])
-            @include('laraform::elements.form.checkbox', ['name' => 'remember', 'checked' => false])
+            @include('laraform::elements.form.email', ['field' => ['name' => 'email']])
+            @include('laraform::elements.form.password', ['field' => ['name' => 'password']])
+            @include('laraform::elements.form.checkbox', ['field' => ['name' => 'remember', 'checked' => false]])
 
             <div class="uk-form-row">
                 <div class="uk-grid uk-grid-collapse">
