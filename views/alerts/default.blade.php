@@ -9,7 +9,8 @@
         {{ session('success') }}
     </div>
 @elseif(session('status'))
-    <div class="alert alert-info">
+    <div class="uk-alert uk-alert-info" data-uk-alert>
+        <a href="#" class="uk-alert-close uk-close"></a>
         {{ session('status') }}
     </div>
 @endif
