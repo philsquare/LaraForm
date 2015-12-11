@@ -19,13 +19,13 @@ class FormProcessor {
      * @param string $path
      * @return string
      */
-    public function processFile(UploadedFile $file, $path, $existing = null)
+    public function processFile(UploadedFile $file, $folder, $existing = null)
     {
-        if($existing) $this->files->destroyFile(storage_path('app/' . $path . '/' . $existing));
+        if($existing) $this->files->destroyFile(storage_path('app/' . $folder . '/' . $existing));
 
         $ext = $file->getClientOriginalExtension();
-        $filename = $this->files->createFilename($ext, $path);
-        $file->move(storage_path('app/' . $path), $filename);
+        $filename = $this->files->createFilename($ext, $folder);
+        $file->move(storage_path('app/' . $folder), $filename);
 
         return $filename;
     }
