@@ -15,7 +15,7 @@ class Files {
      */
     public function createFilename($ext, $location)
     {
-        $filename = str_random(60) . ".$ext";
+        $filename = str_random(100) . ".$ext";
 
         if(Storage::exists("$location/$filename"))
         {
