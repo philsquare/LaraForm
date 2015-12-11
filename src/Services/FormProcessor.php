@@ -21,7 +21,7 @@ class FormProcessor {
      */
     public function processFile(UploadedFile $file, $folder, $existing = null)
     {
-        if($existing) $this->files->destroyFile(storage_path('app/' . $folder . '/' . $existing));
+        if($existing) $this->files->destroyFile($folder . '/' . $existing);
 
         $ext = $file->getClientOriginalExtension();
         $filename = $this->files->createFilename($ext, $folder);

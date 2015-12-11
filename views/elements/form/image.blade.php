@@ -2,9 +2,9 @@
 
 @section('field')
 
-    @if(isset($field['url']))
+    @if(isset($field['value']))
         <div class="image">
-            <img src="{{ $field['url'] }}">
+            <img src="{{ url('images/small/' . $field['value']) }}">
         </div>
     @endif
 

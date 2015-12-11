@@ -33,7 +33,7 @@ class Files {
      */
     public function destroyFile($filenamepath)
     {
-        if(Storage::exists($filenamepath))
+        if(Storage::has($filenamepath))
         {
             return Storage::delete($filenamepath);
         }
