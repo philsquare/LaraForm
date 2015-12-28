@@ -8,7 +8,7 @@
 
         <span class="errors">{{ $errors->first($field['name']) }}</span>
 
-        <label for="{{ $field['name'] }}" class="uk-form-label">{{ isset($field['label']) && $field['label'] !== false ? $field['label'] : ucwords(str_replace('_', ' ', $field['name']))}}</label>
+        <label for="{{ $field['name'] }}" class="uk-form-label">{!! isset($field['label']) && $field['label'] !== false ? $field['label'] : ucwords(str_replace('_', ' ', $field['name'])) !!}</label>
 
         <div class="uk-form-controls">
             @yield('field')
