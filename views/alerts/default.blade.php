@@ -1,4 +1,9 @@
-@if(session()->has('failed'))
+@if(session()->has('errors'))
+    <div class="uk-alert uk-alert-danger" data-uk-alert>
+        Oops. It looks like a few fields were not completed properly.
+        <a href="#" class="uk-alert-close uk-close"></a>
+    </div>
+@elseif(session()->has('failed'))
     <div class="uk-alert uk-alert-danger" data-uk-alert>
         <a href="#" class="uk-alert-close uk-close"></a>
         {{ session('failed') }}
