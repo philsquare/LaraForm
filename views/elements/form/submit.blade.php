@@ -1,1 +1,1 @@
-<input type="submit" value="{{ $value or 'Save' }}" name="submit" class="{{ $class or '' }} uk-width-1-1 uk-button uk-button-primary">
+<input type="submit" value="{{ isset($value) ? $value : 'Save' }}" name="submit" class="{{ isset($class) ? $class : '' }} uk-width-1-1 uk-button uk-button-primary">
